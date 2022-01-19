@@ -6,19 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TrucoFaso</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="jquery" href="https://code.jquery.com/jquery-3.6.0.min.js">
 
 </head>
 <body>
     <header><h1>Anotador de Truco Faso</h1></header>
     <h2>Preparar Anotador:</h2>
-    <form action="" id="primerPaso">
+    <form action="" id="formCantidad">
         <p>Cantidad de jugadores:</p>
         <input type="number" id="inputCantidad">
         <button id="buttonCantidad" onclick="pasoUno()" type="button">Aceptar</button>
     </form>
     <div class="segundoPaso">
         <form action="" class="segundoPaso" id="formNombres">
-            
+            <ul id="formNombres" class="segundoPaso">
+                
+            </ul>
         </form>
     </div>
     <script src="app.js"></script>
