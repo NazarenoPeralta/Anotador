@@ -20,7 +20,7 @@ function pasoUno(){
 }
 
 function pasoDos(){
-    var $formDatos = document.getElementById("formDatos")
+    var $formDatos = document.getElementById("formNombres")
     
     for(let i = 0;i < cantJugadores; i++){
         nombres[i] = document.getElementById("inputNombre" + (i+1)).value;
