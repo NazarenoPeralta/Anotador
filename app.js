@@ -28,9 +28,16 @@ function pasoDos(){
     }
     
     $formDatos.classList.add("esconder")
-    //FALTA ARMAR TABLERO E IMPRIMIRLO
+    pasoTres();
+}
 
-    const tablero = document.createElement("div")
-    tablero.innerHTML = '<div class>'
-    document.getElementById("formNombres").appendChild(tablero)
+function pasoTres(){
+    const tablero = document.createElement("div");
+    tablero.innerHTML = '<div class="table"> <thead id="FilaJugadores">  <tr id="idNombres"> <th scope="col">#Mano</th> </tr> </thead>';
+    const $NombresTablero = document.getElementById("idNombres").value
+
+    for(let i = 0;i < cantJugadores; i++){
+        
+        $NombresTablero.innerHTML = '<th scope="col">'+ nombres[i] +'</th>'
+    }
 }
