@@ -9,54 +9,51 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
 <body>
-    <div id="formDatos"></div>
-        <header><h1>Anotador de Truco Faso</h1></header>
-    
-        <h2>Preparar Anotador:</h2>
-        <form action="" id="formCantidad">
-            <p>Cantidad de jugadores:</p>
-            <input type="number" id="inputCantidad">
-            <button id="buttonCantidad" onclick="pasoUno()" type="button">Aceptar</button>
-        </form>
-        <div class="segundoPaso">
-            <form action=""  id="formNombres">
-                <ul class="segundoPaso">
+  <header><h1>Anotador de Truco Faso</h1></header>
+  
+  <h2>Preparar Anotador:</h2>
+  <form action="" id="formCantidad">
+    <p>Cantidad de jugadores:</p>
+    <input type="number" id="inputCantidad">
+    <button id="buttonCantidad" onclick="CantidadJugadores()" type="button">Aceptar</button>
+  </form>
+  <div class="segundoPaso">
+    <form action=""  id="formNombres">
+      <ul class="segundoPaso">
                     
-                </ul>
-            </form>
-        </div>
-    </div>
-    <div class="Tablero">
-      <!-- <table class="table">
-          <thead>
-            <tr>
-              <th scope="col">Mano</th>
-              <th scope="col">Player 1</th>
-              <th scope="col">Player 2</th>
-              <th scope="col">Player 3</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row">1</th>
-              <td>Mark</td>
-              <td>Otto</td>
-              <td>@mdo</td>
-            </tr>
-            <tr>
-              <th scope="row">2</th>
-              <td>Jacob</td>
-              <td>Thornton</td>
-              <td>@fat</td>
-            </tr>
-            <tr>
-              <th scope="row">3</th>
-              <td colspan="2">Larry the Bird</td>
-              <td>@twitter</td>
-            </tr>
-          </tbody>
-      </table> -->
-    </div>
-    <script src="app.js"></script>
+      </ul>
+    </form>
+  </div>
+
+  <div class="tablero">
+    <table class="table esconder" id="tabla">
+      <thead>
+        <tr>
+          <th scope="col">Mano</th>
+          <th scope="col" id="Player1"></th>
+          <th scope="col" id="Player2"></th>
+          <th scope="col" id="Player3"></th>
+          <th scope="col" id="Player4"></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>Mark</td>
+          <td>Otto</td>
+          <td>@mdo</td>
+          <td>puntaje</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Jacob</td>
+          <td>Thornton</td>
+          <td>@fat</td>
+          <td>puntaje</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <script src="app.js"></script>
 </body>
 </html>
